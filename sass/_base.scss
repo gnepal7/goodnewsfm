@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Karma:wght@400;500;600&family=Mukta:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700&family=Overpass:wght@400;500;600&display=swap');
 /* colors*/
 $main: #2E3094;
 $ass:#EB1D25;
@@ -8,8 +8,8 @@ $gray:#A5A7A5;
 $light:#F2F2F2;
 $white:#ffffff;
 /* fonts*/
-$font-title:'Mukta', sans-serif;
-$font-body: 'Karma', serif;
+$font-title:'Chivo', sans-serif;;
+$font-body: 'Overpass', sans-serif;
 /* media queries */
 @mixin min($width){
 	@media (min-width: #{$width}){
@@ -60,14 +60,17 @@ $font-body: 'Karma', serif;
 	-moz-border-radius: $radius;
 	border-radius: $radius;
 }
+@mixin filter($property){
+	filter : $property;
+}
 @mixin pad ($pads...) {
   padding: $pads;
 }
 @mixin mgn ($mgns...) {
   margin: $mgns;
 }
-@mixin ggap($ggap){
-	grid-gap:$ggap;
+@mixin gap($gap){
+	grid-gap:$gap;
 }
 @mixin absPos ($top, $right, $bottom, $left) {
      position: absolute;
@@ -83,8 +86,8 @@ $font-body: 'Karma', serif;
 @mixin overBg{
 	content:"";				
 	//@include bgGradient(to top, rgba($dgray, 1), rgba($dgray, .3));
-	background-image: -ms-linear-gradient(to top, rgba($dgray, .9), rgba($dgray, .3)); 
-	background-image: linear-gradient(to top, rgba($dgray, .9), rgba($dgray, .3)); 
+	background-image: -ms-linear-gradient(to top, rgba($dgray, .95), rgba($dgray, 0)); 
+	background-image: linear-gradient(to top, rgba($dgray, .95), rgba($dgray, 0)); 
 	height:100%;
 	@include absPos(auto, 0, 0, 0);
 }
@@ -104,7 +107,7 @@ $font-body: 'Karma', serif;
 @mixin imgPos{
 	background-size: cover !important;
 	background-repeat: no-repeat !important;
-	background-position: center center !important;
+	background-position: top center !important;
 }
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -138,8 +141,7 @@ body{
 	}
 }
 body{
-	font-size: 1.1rem;
-	font-weight: 500;
+	font-size: 1rem;
 }
 *{
 	margin:0;
@@ -158,7 +160,6 @@ a{
 	&:hover,
 	&:focus{
 		text-decoration: none;
-		color:$ass;
 		@include transform(translate(1px, 1px));
 	}	
 }

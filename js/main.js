@@ -1,9 +1,9 @@
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-    if(scroll >= 75) {
-        $(".nav").addClass("fixed");
+    if(scroll >= 50) {
+        $(".header").addClass("fixed");
     } else {
-        $(".nav").removeClass("fixed");
+        $(".header").removeClass("fixed");
     }
 });
 
@@ -30,19 +30,19 @@ $( document ).ready(function() {
 
 
 
-    $(".today-pic").owlCarousel({
-     loop: true,
-     autoplay: false,
-     margin: 0,
-     items: 1,
-     dot: true,
-     nav: false,
-     autoplayTimeout: 5000,
-     lazyLoad:true,
-     navText: [
-     "<i class='fa fa-arrow-left'></i>",
-     "<i class='fa fa-arrow-right'></i>",
-     ],
+    $(".banner").owlCarousel({
+        loop: true,
+        autoplay: false,
+        margin: 0,
+        items: 1,
+        dot: true,
+        nav: false,
+        autoplayTimeout: 5000,
+        lazyLoad:true
+        // navText: [
+        //  "<i class='fa fa-arrow-left'></i>",
+        //  "<i class='fa fa-arrow-right'></i>",
+        //  ],
     });
 
     

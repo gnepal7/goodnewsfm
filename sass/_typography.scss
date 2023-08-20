@@ -74,15 +74,15 @@ $displays:(
 	}
 }
 .wrapper{
-	max-width: 80rem;
+	max-width: 100%;
 	margin-left:auto;
 	margin-right:auto;
-	padding-left:1rem;
-	padding-right:1rem;	
-}
-%btn{
-	display: inline-block;
-	color:$gray;	
+	padding-left:2.5rem;
+	padding-right:2.5rem;
+	@include max(767px){
+		padding-left:1rem;
+		padding-right:1rem;
+	}
 }
 %btn{
 	display: inline-block;
@@ -91,6 +91,9 @@ $displays:(
 .btn-main{
 	@extend %btn;
 	background-color: $main;
+	&:hover{
+		background-color:transparent;
+	}
 }
 .btn-ass{
 	@extend %btn;
@@ -116,13 +119,15 @@ $displays:(
 		display: none;
 	}
 }
-blockquote{
-	@include pad(.5rem .7rem);
-	background-color: rgba($main, .15);
-}
 img{	
 	vertical-align: middle;
 	max-width: 100%;
+}
+.mt80{
+	@include mgn(5rem 0 0);
+	@include max(767px){
+		@include mgn(2.5rem 0 0);
+	}
 }
 .img-outer{
 	overflow: hidden;
