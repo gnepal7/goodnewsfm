@@ -28,8 +28,6 @@ $( document ).ready(function() {
       });      
     } 
 
-
-
     $(".banner").owlCarousel({
         loop: true,
         autoplay: false,
@@ -45,11 +43,14 @@ $( document ).ready(function() {
         //  ],
     });
 
+    // program schedule
+    $( function() {
+        $( "#proj-sch" ).tabs();
+    });
+    // image gallery Lightbox
+    $(function() {
+        $('.gallery a').lightbox(); 
+    });
     
-
-    // add active class on current menu item
-    // var url = window.location; 
-    // var element = $('ul.nav_ul a').filter(function() {    
-    // return this.href == url || url.href.indexOf(this.href) == 1; }).parent().addClass('active');
-
 });
+

@@ -50,10 +50,10 @@ $font-body: 'Overpass', sans-serif;
   -o-transition: $args; 
   transition: $args; 
 }
-@mixin transform($property) {
-  -webkit-transform: $property;
-  -ms-transform: $property;
-  transform: $property;
+@mixin transform($args) {
+  -webkit-transform: $args;
+  -ms-transform: $args;
+  transform: $args;
 }
 @mixin radius($radius) {	
 	-webkit-border-radius: $radius;

@@ -44,5 +44,6 @@
 		@include mgn(1rem 0 0);
 		@include pad(1rem 0 0);
 		border-top:1px solid lighten($main, 10%);
+		font-size: .875rem;
 	}
 }

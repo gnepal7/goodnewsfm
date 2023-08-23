@@ -1,4 +1,4 @@
-@for $list from 1 through length(7){
+@for $list from 1 through length(6){
 	h#{$list}, .h#{$list}{
 		font-family: $font-title;
         line-height: 1.5;

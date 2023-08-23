@@ -23,18 +23,21 @@
 	<!-- custom fonts -->	
 	<link rel="stylesheet" type="text/css" href="css/font-styles.css">		
 	<!-- owl-carousel -->
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<!-- image gallery jquery lightbox -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.lightbox.min.css">
 	<!-- custom -->
 	<link rel="stylesheet" type="text/css" href="css/front.css">
 </head>
 <body>
 	<script src="js/jquery-3.5.0.min.js"></script>		
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.lightbox.min.js"></script>
 	<script src="js/main.js"></script>
 
 	<header class="header">
 		<nav class="wrapper df nav">
-			<a class="logo" href="#">
+			<a class="logo" href="index.html">
 				<img src="images/logo.png" alt="logo">
 			</a>
 			<button class="nav_toggler">
@@ -42,31 +45,28 @@
 			</button>
 			<ul class="nav_ul df">
 				<li class="nav_li">
-					<a class="nav_a active" href="#">Home</a>
+					<a class="nav_a active" href="index.html">Home</a>
 				</li>
 				<li class="nav_li">
-					<a class="nav_a" href="#">About Us</a>
+					<a class="nav_a" href="detail.html">About Us</a>
 				</li>
 				<li class="nav_li">
-					<a class="nav_a" href="#">News</a>
+					<a class="nav_a" href="news.html">News</a>
 				</li>
 				<li class="nav_li">
-					<a class="nav_a" href="#">Our Team</a>
+					<a class="nav_a" href="team.html">Our Team</a>
 				</li>
 				<li class="nav_li">
-					<a class="nav_a" href="#">Schedule</a>
+					<a class="nav_a" href="schedule.html">Schedule</a>
 				</li>
 				<li class="nav_li">
-					<a class="nav_a" href="#">Archiev</a>
+					<a class="nav_a" href="archiev.html">Archiev</a>
+				</li>				
+				<li class="nav_li">
+					<a class="nav_a" href="request-zone.html">Request-Zone</a>
 				</li>
 				<li class="nav_li">
-					<a class="nav_a" href="#">Gallery</a>
-				</li>
-				<li class="nav_li">
-					<a class="nav_a" href="#">Request-Zone</a>
-				</li>
-				<li class="nav_li">
-					<a class="nav_a" href="#">Contact</a>
+					<a class="nav_a" href="contact.html">Contact</a>
 				</li>
 			</ul>
 			<figure class="live dfc">
@@ -170,37 +170,50 @@
 	</div>
 
 	<div class="wrapper mt80">
-		<a class="bl-title" href="#">Gallery</a>
-		<div class="dg gallery">
-			<a class="gallery_item col_3 dfc" href="#">
-				<aside class="img-outer">
-					<img src="images/gal1.png" alt="gal1">
-					<i class="cf cf-picture gallery_icon"></i>					
-				</aside>
-				<h6 class="gallery_title">Gallery One</h6>				
-			</a>
-			<a class="gallery_item col_3 dfc" href="#">
-				<aside class="img-outer">
-					<img src="images/gal2.png" alt="gal2">
-					<i class="cf cf-picture gallery_icon"></i>					
-				</aside>
-				<h6 class="gallery_title">Gallery Two</h6>				
-			</a>
-			<a class="gallery_item col_3 dfc" href="#">
-				<aside class="img-outer">
-					<img src="images/gal3.png" alt="gal3">
-					<i class="cf cf-picture gallery_icon"></i>					
-				</aside>
-				<h6 class="gallery_title">Gallery Three</h6>				
-			</a>
-			<a class="gallery_item col_3 dfc" href="#">
-				<aside class="img-outer">
-					<img src="images/gal4.png" alt="gal4">
-					<i class="cf cf-picture gallery_icon"></i>					
-				</aside>
-				<h6 class="gallery_title">Gallery Four</h6>				
-			</a>
-		</div>
+		<h5 class="bl-title">Gallery</h5>
+		<ul class="dg gallery">
+
+			<li class="gallery_item">
+				<a href="images/studio1.jpg"><img src="images/studio1.jpg" alt="Image"></a>
+			</li>
+			<li class="gallery_item">
+				<a href="images/studio2.jpg"><img src="images/studio2.jpg" alt="Image"></a>
+			</li>
+			<li class="gallery_item">
+				<a href="images/proj1.jpg"><img src="images/proj1.jpg" alt="Image"></a>
+			</li>
+			<li class="gallery_item">
+				<a href="images/proj2.jpg"><img src="images/proj2.jpg" alt="Image"></a>
+			</li>
+			<li class="gallery_item">
+				<a href="images/gal1.png"><img src="images/gal1.png" alt="Image"></a>
+			</li>
+			<li class="gallery_item">
+				<a href="images/gal2.png"><img src="images/gal2.png" alt="Image"></a>
+			</li>
+			<li class="gallery_item">
+				<a href="images/gal3.png"><img src="images/gal3.png" alt="Image"></a>
+			</li>
+			<li class="gallery_item">
+				<a href="images/gal4.png"><img src="images/gal4.png" alt="Image"></a>
+			</li>
+			<li class="gallery_item">
+				<a href="images/woman.jpg"><img src="images/woman.jpg" alt="Image"></a>
+			</li>
+			<li class="gallery_item">
+				<a href="images/jhor.jpg"><img src="images/jhor.jpg" alt="Image"></a>
+			</li>
+			<li class="gallery_item">
+				<a href="images/mandali.jpg"><img src="images/mandali.jpg" alt="Image"></a>
+			</li>
+			<li class="gallery_item">
+				<a href="images/dhana.jpg"><img src="images/dhana.jpg" alt="Image"></a>
+			</li>
+			<li class="gallery_item">
+				<a href="images/deu.jpg"><img src="images/deu.jpg" alt="Image"></a>
+			</li>				
+
+		</ul>
 	</div>
 
 	<footer class="footer mt80">
